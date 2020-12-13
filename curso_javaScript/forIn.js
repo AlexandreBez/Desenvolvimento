@@ -11,5 +11,5 @@ const pessoa = {
 };
 
 for(let i in pessoa) {
-    console.log(i)
+    console.log(i, pessoa[i]);
 }
