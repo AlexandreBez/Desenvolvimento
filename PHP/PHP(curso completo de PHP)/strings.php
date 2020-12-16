@@ -22,4 +22,4 @@ $texto = substr($frase, 0, $q);
 $texto2 = substr($frase, $q + strlen($palavra,), strlen($frase));
 
 
-var_dump($texto2);
+var_dump($q);
