@@ -26,3 +26,5 @@ print_r($pessoas);
 print_r($pessoas[0]['nome']);
 
 echo $carros[0][2];
+
+echo json_encode($pessoas);
