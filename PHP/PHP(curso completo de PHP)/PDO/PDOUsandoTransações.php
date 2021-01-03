@@ -10,7 +10,10 @@ $id = 2;
 
 $stmt->execute(array($id));
 
+//! rollback cancela a transacao
 //$conn->rollBack();
+
+//!commit confirma a transaçao
 $conn->commit();
 
 echo "Dados deletados com sucesso";
