@@ -56,12 +56,7 @@ class Usuario {
 
         if (count($result) > 0) {
 
-            $row = $result[0];
-
-            $this -> setIDusuario($row['idusuario']);
-            $this -> setdeslogin($row['deslogin']);
-            $this -> setdesenha($row['desenha']);
-            $this -> setdtcadastro(new DateTime($row['dtcadastro']));
+            $this->setData($result[0]);
         };
     }
 
@@ -91,16 +86,57 @@ class Usuario {
 
         if (count($result) > 0) {
 
-            $row = $result[0];
+            $this->setData($result[0]);
 
-            $this -> setIDusuario($row['idusuario']);
-            $this -> setdeslogin($row['deslogin']);
-            $this -> setdesenha($row['desenha']);
-            $this -> setdtcadastro(new DateTime($row['dtcadastro']));
         }else {
 
             throw new Exception("Login e/ou Senha Incorretos");
         }
+    }
+
+    public function setData($data) {
+
+        $this -> setIDusuario($data['idusuario']);
+        $this -> setdeslogin($data['deslogin']);
+        $this -> setdesenha($data['desenha']);
+        $this -> setdtcadastro(new DateTime($data['dtcadastro']));
+
+        if(count($results) > 0) {
+
+            $this->setData($results[0]);
+        }
+
+    }
+
+    public function insert(){
+
+        $sql = new Sql();
+
+        $results = $sql->select("CALL sp_usuarios_insert(:LOGIN, :PASSWORLD)",array(
+            ':LOGIN' => $this->getdeslogin(),
+            ':PASSWORLD' => $this->getdesenha()
+        ));
+
+    }
+
+    public function update($login, $password) {
+
+        $this->setdeslogin($login);
+        $this->setdesenha($password);
+
+        $sql = new Sql();
+
+        $sql->query("UPDATE tb_usuarios SET deslogin = :LOGIN, desenha = :PASSWORD WHERE idusuario = :ID", array(
+            ':LOGIN'=>$this->getdeslogin,
+            ':PASSWORD'=>$this->getdesenha,
+            ':ID'=>$this->getIDusuario
+        ));
+    }
+
+    public function __construct($Login="" , $Password="")
+    {
+        $this->setdeslogin($Login);
+        $this->setdesenha($Password);
     }
 
     public function __toString(){
