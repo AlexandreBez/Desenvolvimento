@@ -34,6 +34,12 @@ require_once("config.php");
 
 //!criando um novo usuario
 
+// $usuario = new Usuario();
+// $usuario->loadByID(8);
+// $usuario->update("professor", "12345");
+
+//!delete um usuario
+
 $usuario = new Usuario();
-$usuario->loadByID(8);
-$usuario->update("professor", "12345");
+$usuario->loadByID(3);
+$usuario->delete();
