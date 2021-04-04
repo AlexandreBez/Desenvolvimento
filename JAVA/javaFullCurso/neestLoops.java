@@ -1,7 +1,5 @@
 import java.util.Scanner;
 
-import jdk.nashorn.internal.ir.Symbol;
-
 public class neestLoops {
     public static void main(String[] args) {
         
