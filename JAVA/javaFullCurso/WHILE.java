@@ -12,5 +12,7 @@ public class WHILE {
         }while(name.isBlank());
 
         System.out.println("Hello "+name);
+
+        scanner.close();
     }
 }

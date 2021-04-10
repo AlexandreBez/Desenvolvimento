@@ -22,5 +22,7 @@ public class neestLoops {
             }
 
         }
+
+        scanner.close();
     }
 }
