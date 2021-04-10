@@ -1,4 +1,4 @@
-public class 2DArrayLIST{
+public class ArrayLIST_2D{
     public static void main(String[] args) {
 
         ArrayList<ArrayList<Strings>> groceryList = new ArrayList();
