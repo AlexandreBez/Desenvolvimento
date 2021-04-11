@@ -5,14 +5,15 @@
 #Modified Date:
 #Author: Lucas Bez 
 # START #
-
-echo -e "First Value: \c"
+echo -e "Value: \c"
 read -r x
-
-if[ $x -le 10 ]; then
-echo "$x"
-touch temp/test{1..100}.txt
-echo "Script completed"
-fi
+i=0
+while [ $i -le 10 ]
+do
+b=`expr $x \* $i`
+echo "$x * $i = $b"
+i=`expr $i + 1`
+done
+echo "Done...."
 
 # END #
