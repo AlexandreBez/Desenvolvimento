@@ -1,0 +1,15 @@
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 48xp;
+    font-style: italic;
+    font-variant: small-caps;
+}
+
+p{
+    color: red;
+    text-align: center;
+    text-decoration: dotted;
+    text-indent: 50px;
+    text-transform: uppercase;
+    background-color: black;
+}

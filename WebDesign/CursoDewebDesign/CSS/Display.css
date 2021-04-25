@@ -1,0 +1,11 @@
+p{
+    display: inline;
+}
+
+h1{
+    display: block;
+}
+
+h2{
+    display: inline-block;
+}

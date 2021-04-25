@@ -1,0 +1,25 @@
+h1{
+    /* Margen do conteudo externo */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin: 50px;
+
+    /*margen do conteudo interno */
+    padding: 50px;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+
+    /* Padding se soma junto da altura e largura */
+
+    /* borda do conteudo */
+    border: 5px solid red;
+    border-style: double;
+
+    /* largura e altura */
+    width: auto;
+    height: auto;
+}
