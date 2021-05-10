@@ -1,0 +1,9 @@
+{
+    "java.project.sourcePaths": [
+        "Pedido/src",
+        "Pedido",
+        "UsaPedido",
+        "Cliente",
+        "UsaCliente"
+    ]
+}
