@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookstore>
+    <book category="coking">
+        <title lang="en">Everyday Italian</title>
+        <author>Giada De Laurentiis</author>
+        <year>2005</year>
+        <price>30.00</price>
+    </book>
+    <book category="children">
+        <title lang="en">Harry Potter</title>
+        <author>J K. Rowlling</author>
+        <year>2005</year>
+        <price>19.00</price>
+    </book>
+
+    <!-- /bookstore/book[2]/author -->
+</bookstore>

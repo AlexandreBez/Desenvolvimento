@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="aula4.xsl" type="text/xsl"?>
+<class>
+    <student>
+        <firstname>Graham</firstname>
+        <lastname>Bell</lastname>
+        <nickname>Garry</nickname>
+    </student>
+
+    <student>
+        <firstname>Mary</firstname>
+        <lastname>kleyn</lastname>
+        <nickname>Maryy</nickname>
+    </student>
+
+    <student>
+        <firstname>Jaque</firstname>
+        <lastname>Ronde</lastname>
+        <nickname>Artiste</nickname>
+    </student>
+</class>
