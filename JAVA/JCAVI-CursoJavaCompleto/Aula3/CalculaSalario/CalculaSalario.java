@@ -1,3 +1,5 @@
+package CalculaSalario;
+
 public class CalculaSalario {
     
     private double salario;
