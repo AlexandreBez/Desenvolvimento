@@ -1,3 +1,5 @@
+package Jogador.src;
+
 public class Jogador {
     // atributos
     private String nome;

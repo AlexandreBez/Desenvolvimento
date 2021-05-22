@@ -1,3 +1,5 @@
+package decisao.src;
+
 public class Decisao {
     public static void main(String[] args) throws Exception {
         int x = 7;

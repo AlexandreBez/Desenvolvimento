@@ -1,3 +1,5 @@
+package Estruturas;
+
 public class UsaFor {
     public static void main(String[] args) {
         

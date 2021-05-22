@@ -1,3 +1,5 @@
+package Pedido.Pedido;
+
 public class Cliente {
     
     private int codigo;

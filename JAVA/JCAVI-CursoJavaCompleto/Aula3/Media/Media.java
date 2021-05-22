@@ -1,3 +1,5 @@
+package Media;
+
 public class Media {
     
     private double nota1;

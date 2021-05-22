@@ -1,3 +1,5 @@
+package Exer1.Soma.src;
+
 public class Soma {
     
     /**

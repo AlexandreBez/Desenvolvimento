@@ -1,3 +1,5 @@
+package CalculaSalario;
+
 import javax.swing.JOptionPane;
 
 public class UsaCalSalario {

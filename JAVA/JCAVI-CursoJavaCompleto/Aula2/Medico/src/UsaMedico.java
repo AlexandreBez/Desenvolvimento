@@ -1,4 +1,4 @@
-package src;
+package Medico.src;
 
 public class UsaMedico {
     public static void main(String[] args) {

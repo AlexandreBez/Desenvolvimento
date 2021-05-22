@@ -1,3 +1,5 @@
+package lerValor.lerValor.src;
+
 import javax.swing.JOptionPane;
 
 public class Lervalor {

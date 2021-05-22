@@ -1,3 +1,5 @@
+package Pedido.Pedido;
+
 public class UsaCliente {
     public static void main(String[] args) {
         

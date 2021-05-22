@@ -1,3 +1,5 @@
+package Pedido.Pedido;
+
 public class UsaPedido {
 
     public static void main(String[] args) {

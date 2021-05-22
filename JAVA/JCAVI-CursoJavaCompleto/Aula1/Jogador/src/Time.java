@@ -1,3 +1,5 @@
+package Jogador.src;
+
 public class Time {
         // atributos
         private String time;

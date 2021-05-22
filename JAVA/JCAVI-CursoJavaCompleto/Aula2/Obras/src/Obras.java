@@ -1,4 +1,4 @@
-package src; 
+package Obras.src;
 
 public class Obras {
     public static  void main(String[] args) {
