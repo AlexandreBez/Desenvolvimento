@@ -1,8 +1,10 @@
 <?php
 
-$mail = new PHPMailler;
+require_once("vendor/autoload.php");
+
+$mail = new PHPMailer;
 $mail -> isSMTP();
-$mail -> SMTPDebug(2);
+$mail -> SMTPDebug = 2;
 $mail -> Debugoutput = 'html';
 $mail -> Host = 'smtp.@gmail.com';
 $mail -> Port = 587;
@@ -15,7 +17,7 @@ $mail -> addAddress('destinario@gmail.com', 'Apelido');
 $mail -> Subject = 'Assunto';
 $mail -> msgHTML(file_get_contents('content.html'), dirname(__FILE__));
 $mail -> AltBody = 'Plain-Text';
-$mail -> adAttachment('image/phpmailer_mini.pgn');
+$mail -> addAttachment('image/phpmailer_mini.pgn');
 
 if(!$mail->send()) {
     echo "Mailler Error: ".$mail->Errorinfo;
